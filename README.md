@@ -23,7 +23,8 @@ The website is hosted at: https://nhant1164.github.io/expense-tracker-privacy/
 ## Contact
 
 For support or questions:
-- Email: [Your Email]
+
+- Email: nhant.guide@gmail.com
 - GitHub Issues: [Repository Issues](https://github.com/nhant1164/expense_tracker/issues)
 
 ## License
