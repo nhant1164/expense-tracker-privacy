@@ -61,8 +61,7 @@ Bạn có các quyền sau:
 
 Nếu bạn có câu hỏi về chính sách bảo mật này, vui lòng liên hệ:
 
-- **Email**: [Thêm email của bạn]
-- **Địa chỉ**: [Thêm địa chỉ của bạn]
+- **Email**: nhant.guide@gmail.com
 
 ## 9. THAY ĐỔI CHÍNH SÁCH
 
