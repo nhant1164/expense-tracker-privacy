@@ -74,4 +74,4 @@ Bằng cách sử dụng ứng dụng "Quản lý chi tiêu", bạn đồng ý v
 
 ---
 
-*Chính sách này tuân thủ theo quy định về bảo vệ dữ liệu cá nhân và các luật liên quan tại Việt Nam.*
+_Chính sách này tuân thủ theo quy định về bảo vệ dữ liệu cá nhân và các luật liên quan tại Việt Nam._
