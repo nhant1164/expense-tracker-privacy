@@ -1,75 +1,145 @@
-# CHÍNH SÁCH BẢO MẬT - QUẢN LÝ CHI TIÊU
+# CHÍNH SÁCH BẢO MẬT - NTN QUẢN LÝ CHI TIÊU
 
-**Cập nhật lần cuối: 14/07/2025**
+**Cập nhật lần cuối: Tháng 1, 2026**
 
 ## 1. THÔNG TIN CHUNG
 
-Ứng dụng "Quản lý chi tiêu" được phát triển bởi NTN. Chúng tôi cam kết bảo vệ quyền riêng tư và thông tin cá nhân của người dùng. Chính sách này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ thông tin của bạn khi sử dụng ứng dụng.
+Ứng dụng "NTN Quản Lý Chi Tiêu" (Expense Tracker) được phát triển bởi NTN. Chúng tôi cam kết bảo vệ quyền riêng tư và thông tin cá nhân của người dùng. Chính sách này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ thông tin của bạn khi sử dụng ứng dụng.
+
+**Ứng dụng dành cho người dùng từ 13 tuổi trở lên.**
 
 ## 2. THÔNG TIN THU THẬP
 
-Ứng dụng "Quản lý chi tiêu" chỉ lưu trữ dữ liệu LOCAL trên thiết bị của bạn, bao gồm:
+### 2.1 Dữ liệu lưu trữ LOCAL (trên thiết bị)
 
-- **Thông tin giao dịch**: Số tiền, ngày tháng, mô tả các giao dịch thu chi
-- **Danh mục chi tiêu**: Phân loại các khoản chi tiêu theo danh mục
-- **Dữ liệu đầu tư**: Thông tin về các khoản đầu tư cá nhân
-- **Cài đặt ứng dụng**: Tùy chọn giao diện, ngôn ngữ và các cài đặt khác
+Ứng dụng lưu trữ dữ liệu trực tiếp trên thiết bị của bạn, bao gồm:
 
-## 3. CÁCH SỬ DỤNG THÔNG TIN
+- **Thông tin giao dịch**: Số tiền, danh mục, ngày tháng, mô tả, đường dẫn hình ảnh đính kèm
+- **Danh mục chi tiêu**: Tên, icon, màu sắc, loại (thu/chi), danh mục cha
+- **Ngân sách**: Danh mục, số tiền, chu kỳ, ngày bắt đầu/kết thúc
+- **Dữ liệu đầu tư**: Tên, loại, số tiền, giá trị, ngày mua/bán, trạng thái
+- **Cài đặt ứng dụng**: Theme (light/dark/system), ngôn ngữ (vi/en)
+- **API keys** (nếu bạn tự cấu hình): Được mã hóa và lưu trong Keychain (iOS) hoặc EncryptedSharedPreferences (Android)
+
+### 2.2 Dữ liệu KHÔNG thu thập
+
+Chúng tôi **KHÔNG** thu thập:
+
+- Thông tin cá nhân (tên, email, số điện thoại)
+- Vị trí địa lý
+- Danh bạ
+- Dữ liệu analytics/tracking
+- Advertising ID
+
+## 3. DỊCH VỤ BÊN THỨ 3
+
+Ứng dụng có tích hợp một số dịch vụ bên thứ 3 để cung cấp các tính năng:
+
+### 3.1 Google Gemini API (OCR)
+
+- **Mục đích**: Nhận dạng văn bản từ hình ảnh hóa đơn
+- **Dữ liệu gửi**: Hình ảnh hóa đơn (chỉ xử lý, không lưu trữ vĩnh viễn)
+- **Privacy Policy**: https://policies.google.com/privacy
+
+### 3.2 Groq API (OCR dự phòng)
+
+- **Mục đích**: Dịch vụ OCR dự phòng khi Gemini không khả dụng
+- **Dữ liệu gửi**: Hình ảnh hóa đơn (chỉ xử lý, không lưu trữ)
+- **Privacy Policy**: https://groq.com/privacy-policy
+
+### 3.3 RevenueCat
+
+- **Mục đích**: Quản lý gói đăng ký Premium
+- **Dữ liệu gửi**: Trạng thái mua hàng, App User ID
+- **Privacy Policy**: https://www.revenuecat.com/privacy
+
+### 3.4 Firebase Remote Config
+
+- **Mục đích**: Cấu hình ứng dụng từ xa
+- **Dữ liệu gửi**: Không có dữ liệu người dùng
+- **Privacy Policy**: https://firebase.google.com/support/privacy
+
+### 3.5 Apple iCloud (chỉ iOS)
+
+- **Mục đích**: Sao lưu dữ liệu
+- **Dữ liệu gửi**: File backup chứa giao dịch, danh mục, ngân sách, đầu tư
+- **Privacy Policy**: https://www.apple.com/legal/privacy
+
+### 3.6 App Store / Google Play
+
+- **Mục đích**: Xử lý mua hàng
+- **Dữ liệu gửi**: Thông tin thanh toán (theo chính sách của Apple/Google)
+
+## 4. CÁCH SỬ DỤNG THÔNG TIN
 
 Dữ liệu được thu thập chỉ nhằm mục đích:
 
-- Hiển thị thông tin tài chính cá nhân của bạn
+- Hiển thị và quản lý thông tin tài chính cá nhân của bạn
 - Tạo biểu đồ và thống kê chi tiêu
-- Xuất dữ liệu CSV/JSON theo yêu cầu của người dùng
-- Cải thiện trải nghiệm sử dụng ứng dụng
+- Nhận dạng hóa đơn qua OCR (khi bạn sử dụng tính năng này)
+- Xuất dữ liệu CSV/JSON/PDF theo yêu cầu
+- Sao lưu và khôi phục dữ liệu
 
-## 4. CHIA SẺ THÔNG TIN
+## 5. CHIA SẺ THÔNG TIN
 
-**Chúng tôi KHÔNG chia sẻ thông tin cá nhân với bất kỳ bên thứ ba nào.**
+**Chúng tôi KHÔNG bán hoặc chia sẻ dữ liệu của bạn cho mục đích quảng cáo.**
 
-- Dữ liệu chỉ tồn tại trên thiết bị của bạn
-- Không có kết nối server để lưu trữ dữ liệu
-- Không thu thập thông tin định danh cá nhân
+Dữ liệu chỉ được chia sẻ với các dịch vụ bên thứ 3 được liệt kê ở mục 3, và chỉ khi bạn sử dụng các tính năng liên quan.
 
-## 5. BẢO MẬT DỮ LIỆU
+## 6. BẢO MẬT DỮ LIỆU
 
-Biện pháp bảo mật được áp dụng:
+### 6.1 Mã hóa dữ liệu
 
-- **Lưu trữ local**: Tất cả dữ liệu được lưu trữ trực tiếp trên thiết bị
-- **Không kết nối internet**: Ứng dụng không gửi dữ liệu qua internet
-- **Kiểm soát hoàn toàn**: Người dùng có toàn quyền kiểm soát dữ liệu của mình
+| Platform    | Phương thức                      | Dữ liệu được bảo vệ         |
+| ----------- | -------------------------------- | --------------------------- |
+| **iOS**     | Keychain (hardware encryption)   | API keys, subscriber status |
+| **Android** | EncryptedSharedPreferences (AES) | API keys, subscriber status |
 
-## 6. QUYỀN CỦA NGƯỜI DÙNG
+### 6.2 Truyền tải dữ liệu
+
+- Tất cả API calls sử dụng HTTPS
+- Hình ảnh được nén trước khi gửi đến OCR API
+- Không gửi dữ liệu qua kết nối không mã hóa
+
+## 7. QUYỀN TRUY CẬP ỨNG DỤNG
+
+| Quyền             | Mục đích                      | Bắt buộc |
+| ----------------- | ----------------------------- | -------- |
+| **Camera**        | Chụp ảnh hóa đơn              | Không    |
+| **Photo Library** | Chọn ảnh từ thư viện          | Không    |
+| **Internet**      | Gọi API OCR, quản lý đăng ký  | Có       |
+| **iCloud**        | Sao lưu dữ liệu (chỉ iOS)     | Không    |
+
+## 8. QUYỀN CỦA NGƯỜI DÙNG
 
 Bạn có các quyền sau:
 
-- **Xem dữ liệu**: Truy cập tất cả thông tin đã lưu trong ứng dụng
-- **Xuất dữ liệu**: Xuất thông tin ra file CSV hoặc JSON
-- **Xóa dữ liệu**: Xóa toàn bộ hoặc một phần dữ liệu
-- **Gỡ cài đặt**: Xóa hoàn toàn ứng dụng và dữ liệu
+| Quyền                 | Cách thực hiện                           |
+| --------------------- | ---------------------------------------- |
+| **Xem dữ liệu**       | Xem tất cả trong ứng dụng                |
+| **Xuất dữ liệu**      | Menu > Dữ liệu & Sao lưu > Xuất CSV/JSON |
+| **Xóa dữ liệu**       | Xóa từng giao dịch hoặc xóa ứng dụng     |
+| **Sao lưu dữ liệu**   | Menu > Dữ liệu & Sao lưu > Sao lưu       |
+| **Khôi phục dữ liệu** | Menu > Dữ liệu & Sao lưu > Khôi phục     |
+| **Hủy subscription**  | Cài đặt thiết bị > App Store/Play Store  |
 
-## 7. QUYỀN TRUY CẬP
+## 9. CHÍNH SÁCH TRẺ EM
 
-Ứng dụng yêu cầu các quyền sau:
+Ứng dụng không dành cho trẻ em dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin từ trẻ em dưới 13 tuổi.
 
-- **Lưu trữ**: Để lưu dữ liệu trên thiết bị
-- **Thư viện ảnh**: Để xuất/nhập file dữ liệu
-- **Camera**: Để chụp ảnh hóa đơn (nếu có)
-
-## 8. LIÊN HỆ
+## 10. LIÊN HỆ
 
 Nếu bạn có câu hỏi về chính sách bảo mật này, vui lòng liên hệ:
 
 - **Email**: nhant.guide@gmail.com
 
-## 9. THAY ĐỔI CHÍNH SÁCH
+## 11. THAY ĐỔI CHÍNH SÁCH
 
-Chúng tôi có thể cập nhật chính sách bảo mật này theo thời gian. Mọi thay đổi quan trọng sẽ được thông báo trong ứng dụng hoặc qua email.
+Chúng tôi có thể cập nhật chính sách bảo mật này theo thời gian. Mọi thay đổi quan trọng sẽ được thông báo trong ứng dụng. Bạn nên định kỳ xem lại chính sách này để cập nhật các thay đổi.
 
-## 10. CHẤP NHẬN CHÍNH SÁCH
+## 12. CHẤP NHẬN CHÍNH SÁCH
 
-Bằng cách sử dụng ứng dụng "Quản lý chi tiêu", bạn đồng ý với các điều khoản trong chính sách bảo mật này.
+Bằng cách sử dụng ứng dụng "NTN Quản Lý Chi Tiêu", bạn đồng ý với các điều khoản trong chính sách bảo mật này.
 
 ---
 

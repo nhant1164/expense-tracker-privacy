@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chính sách bảo mật - Quản lý chi tiêu</title>
+    <title>Chính sách bảo mật - NTN Quản Lý Chi Tiêu</title>
     <style>
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -32,11 +32,28 @@
         padding-bottom: 10px;
         margin-top: 30px;
       }
+      h3 {
+        color: #2c3e50;
+        margin-top: 20px;
+      }
       .last-updated {
         text-align: center;
         color: #7f8c8d;
         font-style: italic;
         margin-bottom: 30px;
+      }
+      .nav-links {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .nav-links a {
+        color: #3498db;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: 500;
+      }
+      .nav-links a:hover {
+        text-decoration: underline;
       }
       ul {
         padding-left: 20px;
@@ -48,6 +65,12 @@
         background-color: #e8f4f8;
         padding: 15px;
         border-left: 4px solid #3498db;
+        margin: 20px 0;
+      }
+      .warning {
+        background-color: #fff3cd;
+        padding: 15px;
+        border-left: 4px solid #ffc107;
         margin: 20px 0;
       }
       .contact-info {
@@ -64,135 +87,269 @@
         color: #7f8c8d;
         font-size: 0.9em;
       }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15px 0;
+      }
+      th, td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+      th {
+        background-color: #f8f9fa;
+      }
+      .third-party {
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 10px 0;
+      }
+      .third-party a {
+        color: #3498db;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>CHÍNH SÁCH BẢO MẬT - QUẢN LÝ CHI TIÊU</h1>
+      <div class="nav-links">
+        <a href="index.html">Trang chủ</a>
+        <a href="terms-of-service.html">Điều khoản sử dụng</a>
+        <a href="support.html">Hỗ trợ</a>
+      </div>
+
+      <h1>CHÍNH SÁCH BẢO MẬT - NTN QUẢN LÝ CHI TIÊU</h1>
 
       <div class="last-updated">
-        <strong>Cập nhật lần cuối: 14/07/2025</strong>
+        <strong>Cập nhật lần cuối: Tháng 1, 2026</strong>
       </div>
 
       <h2>1. THÔNG TIN CHUNG</h2>
       <p>
-        Ứng dụng "Quản lý chi tiêu" được phát triển bởi NTN. Chúng tôi cam kết
+        Ứng dụng "NTN Quản Lý Chi Tiêu" (Expense Tracker) được phát triển bởi NTN. Chúng tôi cam kết
         bảo vệ quyền riêng tư và thông tin cá nhân của người dùng. Chính sách
         này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ thông tin của
         bạn khi sử dụng ứng dụng.
       </p>
+      <div class="warning">
+        <strong>Ứng dụng dành cho người dùng từ 13 tuổi trở lên.</strong>
+      </div>
 
       <h2>2. THÔNG TIN THU THẬP</h2>
+
+      <h3>2.1 Dữ liệu lưu trữ LOCAL (trên thiết bị)</h3>
       <div class="highlight">
-        <strong
-          >Ứng dụng "Quản lý chi tiêu" chỉ lưu trữ dữ liệu LOCAL trên thiết bị
-          của bạn, bao gồm:</strong
-        >
+        <strong>Ứng dụng lưu trữ dữ liệu trực tiếp trên thiết bị của bạn, bao gồm:</strong>
       </div>
       <ul>
-        <li>
-          <strong>Thông tin giao dịch</strong>: Số tiền, ngày tháng, mô tả các
-          giao dịch thu chi
-        </li>
-        <li>
-          <strong>Danh mục chi tiêu</strong>: Phân loại các khoản chi tiêu theo
-          danh mục
-        </li>
-        <li>
-          <strong>Dữ liệu đầu tư</strong>: Thông tin về các khoản đầu tư cá nhân
-        </li>
-        <li>
-          <strong>Cài đặt ứng dụng</strong>: Tùy chọn giao diện, ngôn ngữ và các
-          cài đặt khác
-        </li>
+        <li><strong>Thông tin giao dịch</strong>: Số tiền, danh mục, ngày tháng, mô tả, đường dẫn hình ảnh đính kèm</li>
+        <li><strong>Danh mục chi tiêu</strong>: Tên, icon, màu sắc, loại (thu/chi), danh mục cha</li>
+        <li><strong>Ngân sách</strong>: Danh mục, số tiền, chu kỳ, ngày bắt đầu/kết thúc</li>
+        <li><strong>Dữ liệu đầu tư</strong>: Tên, loại, số tiền, giá trị, ngày mua/bán, trạng thái</li>
+        <li><strong>Cài đặt ứng dụng</strong>: Theme (light/dark/system), ngôn ngữ (vi/en)</li>
+        <li><strong>API keys</strong> (nếu bạn tự cấu hình): Được mã hóa và lưu trong Keychain (iOS) hoặc EncryptedSharedPreferences (Android)</li>
       </ul>
 
-      <h2>3. CÁCH SỬ DỤNG THÔNG TIN</h2>
+      <h3>2.2 Dữ liệu KHÔNG thu thập</h3>
+      <p>Chúng tôi <strong>KHÔNG</strong> thu thập:</p>
+      <ul>
+        <li>Thông tin cá nhân (tên, email, số điện thoại)</li>
+        <li>Vị trí địa lý</li>
+        <li>Danh bạ</li>
+        <li>Dữ liệu analytics/tracking</li>
+        <li>Advertising ID</li>
+      </ul>
+
+      <h2>3. DỊCH VỤ BÊN THỨ 3</h2>
+      <p>Ứng dụng có tích hợp một số dịch vụ bên thứ 3 để cung cấp các tính năng:</p>
+
+      <div class="third-party">
+        <h3>3.1 Google Gemini API (OCR)</h3>
+        <ul>
+          <li><strong>Mục đích</strong>: Nhận dạng văn bản từ hình ảnh hóa đơn</li>
+          <li><strong>Dữ liệu gửi</strong>: Hình ảnh hóa đơn (chỉ xử lý, không lưu trữ vĩnh viễn)</li>
+          <li><strong>Privacy Policy</strong>: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+        </ul>
+      </div>
+
+      <div class="third-party">
+        <h3>3.2 Groq API (OCR dự phòng)</h3>
+        <ul>
+          <li><strong>Mục đích</strong>: Dịch vụ OCR dự phòng khi Gemini không khả dụng</li>
+          <li><strong>Dữ liệu gửi</strong>: Hình ảnh hóa đơn (chỉ xử lý, không lưu trữ)</li>
+          <li><strong>Privacy Policy</strong>: <a href="https://groq.com/privacy-policy" target="_blank">https://groq.com/privacy-policy</a></li>
+        </ul>
+      </div>
+
+      <div class="third-party">
+        <h3>3.3 RevenueCat</h3>
+        <ul>
+          <li><strong>Mục đích</strong>: Quản lý gói đăng ký Premium</li>
+          <li><strong>Dữ liệu gửi</strong>: Trạng thái mua hàng, App User ID</li>
+          <li><strong>Privacy Policy</strong>: <a href="https://www.revenuecat.com/privacy" target="_blank">https://www.revenuecat.com/privacy</a></li>
+        </ul>
+      </div>
+
+      <div class="third-party">
+        <h3>3.4 Firebase Remote Config</h3>
+        <ul>
+          <li><strong>Mục đích</strong>: Cấu hình ứng dụng từ xa</li>
+          <li><strong>Dữ liệu gửi</strong>: Không có dữ liệu người dùng</li>
+          <li><strong>Privacy Policy</strong>: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></li>
+        </ul>
+      </div>
+
+      <div class="third-party">
+        <h3>3.5 Apple iCloud (chỉ iOS)</h3>
+        <ul>
+          <li><strong>Mục đích</strong>: Sao lưu dữ liệu</li>
+          <li><strong>Dữ liệu gửi</strong>: File backup chứa giao dịch, danh mục, ngân sách, đầu tư</li>
+          <li><strong>Privacy Policy</strong>: <a href="https://www.apple.com/legal/privacy" target="_blank">https://www.apple.com/legal/privacy</a></li>
+        </ul>
+      </div>
+
+      <div class="third-party">
+        <h3>3.6 App Store / Google Play</h3>
+        <ul>
+          <li><strong>Mục đích</strong>: Xử lý mua hàng</li>
+          <li><strong>Dữ liệu gửi</strong>: Thông tin thanh toán (theo chính sách của Apple/Google)</li>
+        </ul>
+      </div>
+
+      <h2>4. CÁCH SỬ DỤNG THÔNG TIN</h2>
       <p>Dữ liệu được thu thập chỉ nhằm mục đích:</p>
       <ul>
-        <li>Hiển thị thông tin tài chính cá nhân của bạn</li>
+        <li>Hiển thị và quản lý thông tin tài chính cá nhân của bạn</li>
         <li>Tạo biểu đồ và thống kê chi tiêu</li>
-        <li>Xuất dữ liệu CSV/JSON theo yêu cầu của người dùng</li>
-        <li>Cải thiện trải nghiệm sử dụng ứng dụng</li>
+        <li>Nhận dạng hóa đơn qua OCR (khi bạn sử dụng tính năng này)</li>
+        <li>Xuất dữ liệu CSV/JSON/PDF theo yêu cầu</li>
+        <li>Sao lưu và khôi phục dữ liệu</li>
       </ul>
 
-      <h2>4. CHIA SẺ THÔNG TIN</h2>
+      <h2>5. CHIA SẺ THÔNG TIN</h2>
       <div class="highlight">
-        <strong
-          >Chúng tôi KHÔNG chia sẻ thông tin cá nhân với bất kỳ bên thứ ba
-          nào.</strong
-        >
+        <strong>Chúng tôi KHÔNG bán hoặc chia sẻ dữ liệu của bạn cho mục đích quảng cáo.</strong>
       </div>
+      <p>Dữ liệu chỉ được chia sẻ với các dịch vụ bên thứ 3 được liệt kê ở mục 3, và chỉ khi bạn sử dụng các tính năng liên quan.</p>
+
+      <h2>6. BẢO MẬT DỮ LIỆU</h2>
+
+      <h3>6.1 Mã hóa dữ liệu</h3>
+      <table>
+        <tr>
+          <th>Platform</th>
+          <th>Phương thức</th>
+          <th>Dữ liệu được bảo vệ</th>
+        </tr>
+        <tr>
+          <td><strong>iOS</strong></td>
+          <td>Keychain (hardware encryption)</td>
+          <td>API keys, subscriber status</td>
+        </tr>
+        <tr>
+          <td><strong>Android</strong></td>
+          <td>EncryptedSharedPreferences (AES)</td>
+          <td>API keys, subscriber status</td>
+        </tr>
+      </table>
+
+      <h3>6.2 Truyền tải dữ liệu</h3>
       <ul>
-        <li>Dữ liệu chỉ tồn tại trên thiết bị của bạn</li>
-        <li>Không có kết nối server để lưu trữ dữ liệu</li>
-        <li>Không thu thập thông tin định danh cá nhân</li>
+        <li>Tất cả API calls sử dụng HTTPS</li>
+        <li>Hình ảnh được nén trước khi gửi đến OCR API</li>
+        <li>Không gửi dữ liệu qua kết nối không mã hóa</li>
       </ul>
 
-      <h2>5. BẢO MẬT DỮ LIỆU</h2>
-      <p>Biện pháp bảo mật được áp dụng:</p>
-      <ul>
-        <li>
-          <strong>Lưu trữ local</strong>: Tất cả dữ liệu được lưu trữ trực tiếp
-          trên thiết bị
-        </li>
-        <li>
-          <strong>Không kết nối internet</strong>: Ứng dụng không gửi dữ liệu
-          qua internet
-        </li>
-        <li>
-          <strong>Kiểm soát hoàn toàn</strong>: Người dùng có toàn quyền kiểm
-          soát dữ liệu của mình
-        </li>
-      </ul>
+      <h2>7. QUYỀN TRUY CẬP ỨNG DỤNG</h2>
+      <table>
+        <tr>
+          <th>Quyền</th>
+          <th>Mục đích</th>
+          <th>Bắt buộc</th>
+        </tr>
+        <tr>
+          <td><strong>Camera</strong></td>
+          <td>Chụp ảnh hóa đơn</td>
+          <td>Không</td>
+        </tr>
+        <tr>
+          <td><strong>Photo Library</strong></td>
+          <td>Chọn ảnh từ thư viện</td>
+          <td>Không</td>
+        </tr>
+        <tr>
+          <td><strong>Internet</strong></td>
+          <td>Gọi API OCR, quản lý đăng ký</td>
+          <td>Có</td>
+        </tr>
+        <tr>
+          <td><strong>iCloud</strong></td>
+          <td>Sao lưu dữ liệu (chỉ iOS)</td>
+          <td>Không</td>
+        </tr>
+      </table>
 
-      <h2>6. QUYỀN CỦA NGƯỜI DÙNG</h2>
+      <h2>8. QUYỀN CỦA NGƯỜI DÙNG</h2>
       <p>Bạn có các quyền sau:</p>
-      <ul>
-        <li>
-          <strong>Xem dữ liệu</strong>: Truy cập tất cả thông tin đã lưu trong
-          ứng dụng
-        </li>
-        <li>
-          <strong>Xuất dữ liệu</strong>: Xuất thông tin ra file CSV hoặc JSON
-        </li>
-        <li><strong>Xóa dữ liệu</strong>: Xóa toàn bộ hoặc một phần dữ liệu</li>
-        <li><strong>Gỡ cài đặt</strong>: Xóa hoàn toàn ứng dụng và dữ liệu</li>
-      </ul>
+      <table>
+        <tr>
+          <th>Quyền</th>
+          <th>Cách thực hiện</th>
+        </tr>
+        <tr>
+          <td><strong>Xem dữ liệu</strong></td>
+          <td>Xem tất cả trong ứng dụng</td>
+        </tr>
+        <tr>
+          <td><strong>Xuất dữ liệu</strong></td>
+          <td>Menu > Dữ liệu & Sao lưu > Xuất CSV/JSON</td>
+        </tr>
+        <tr>
+          <td><strong>Xóa dữ liệu</strong></td>
+          <td>Xóa từng giao dịch hoặc xóa ứng dụng</td>
+        </tr>
+        <tr>
+          <td><strong>Sao lưu dữ liệu</strong></td>
+          <td>Menu > Dữ liệu & Sao lưu > Sao lưu</td>
+        </tr>
+        <tr>
+          <td><strong>Khôi phục dữ liệu</strong></td>
+          <td>Menu > Dữ liệu & Sao lưu > Khôi phục</td>
+        </tr>
+        <tr>
+          <td><strong>Hủy subscription</strong></td>
+          <td>Cài đặt thiết bị > App Store/Play Store</td>
+        </tr>
+      </table>
 
-      <h2>7. QUYỀN TRUY CẬP</h2>
-      <p>Ứng dụng yêu cầu các quyền sau:</p>
-      <ul>
-        <li><strong>Lưu trữ</strong>: Để lưu dữ liệu trên thiết bị</li>
-        <li><strong>Thư viện ảnh</strong>: Để xuất/nhập file dữ liệu</li>
-        <li><strong>Camera</strong>: Để chụp ảnh hóa đơn (nếu có)</li>
-      </ul>
+      <h2>9. CHÍNH SÁCH TRẺ EM</h2>
+      <p>Ứng dụng không dành cho trẻ em dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin từ trẻ em dưới 13 tuổi.</p>
 
-      <h2>8. LIÊN HỆ</h2>
+      <h2>10. LIÊN HỆ</h2>
       <div class="contact-info">
         <p>Nếu bạn có câu hỏi về chính sách bảo mật này, vui lòng liên hệ:</p>
         <p><strong>Email</strong>: nhant.guide@gmail.com</p>
       </div>
 
-      <h2>9. THAY ĐỔI CHÍNH SÁCH</h2>
+      <h2>11. THAY ĐỔI CHÍNH SÁCH</h2>
       <p>
         Chúng tôi có thể cập nhật chính sách bảo mật này theo thời gian. Mọi
-        thay đổi quan trọng sẽ được thông báo trong ứng dụng hoặc qua email.
+        thay đổi quan trọng sẽ được thông báo trong ứng dụng. Bạn nên định kỳ xem lại chính sách này để cập nhật các thay đổi.
       </p>
 
-      <h2>10. CHẤP NHẬN CHÍNH SÁCH</h2>
+      <h2>12. CHẤP NHẬN CHÍNH SÁCH</h2>
       <p>
-        Bằng cách sử dụng ứng dụng "Quản lý chi tiêu", bạn đồng ý với các điều
+        Bằng cách sử dụng ứng dụng "NTN Quản Lý Chi Tiêu", bạn đồng ý với các điều
         khoản trong chính sách bảo mật này.
       </p>
 
       <div class="footer">
         <p>
-          <em
-            >Chính sách này tuân thủ theo quy định về bảo vệ dữ liệu cá nhân và
-            các luật liên quan tại Việt Nam.</em
-          >
+          <em>Chính sách này tuân thủ theo quy định về bảo vệ dữ liệu cá nhân và
+            các luật liên quan tại Việt Nam.</em>
         </p>
+        <p><a href="index.html">← Quay lại trang chủ</a></p>
       </div>
     </div>
   </body>

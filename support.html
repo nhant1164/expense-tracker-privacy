@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hỗ trợ khách hàng - Quản lý chi tiêu</title>
+    <title>Hỗ trợ khách hàng - NTN Quản Lý Chi Tiêu</title>
     <style>
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -125,6 +125,27 @@
         border-radius: 10px;
         margin: 30px 0;
       }
+      .feature-list {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px 0;
+      }
+      .feature-list h3 {
+        color: #2c3e50;
+        margin-bottom: 15px;
+      }
+      .feature-list ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .feature-list li {
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+      }
+      .feature-list li:last-child {
+        border-bottom: none;
+      }
       .footer {
         text-align: center;
         margin-top: 40px;
@@ -138,7 +159,7 @@
   <body>
     <div class="container">
       <div class="nav-links">
-        <a href="index.html">← Trang chủ</a>
+        <a href="index.html">Trang chủ</a>
         <a href="privacy-policy.html">Chính sách bảo mật</a>
         <a href="terms-of-service.html">Điều khoản sử dụng</a>
       </div>
@@ -146,7 +167,7 @@
       <h1>HỖ TRỢ KHÁCH HÀNG</h1>
 
       <p style="text-align: center; color: #7f8c8d; margin-bottom: 30px">
-        Chúng tôi luôn sẵn sàng hỗ trợ bạn sử dụng ứng dụng "Quản lý chi tiêu"
+        Chúng tôi luôn sẵn sàng hỗ trợ bạn sử dụng ứng dụng "NTN Quản Lý Chi Tiêu"
         một cách tốt nhất.
       </p>
 
@@ -192,10 +213,26 @@
 
       <div class="app-info">
         <h3>🔧 Thông tin ứng dụng</h3>
-        <p><strong>Phiên bản hiện tại:</strong> 1.0.0</p>
-        <p><strong>Platform:</strong> iOS, Android</p>
-        <p><strong>Yêu cầu:</strong> iOS 12.0+, Android 5.0+</p>
-        <p><strong>Dung lượng:</strong> ~15MB</p>
+        <p><strong>Tên ứng dụng:</strong> NTN Quản Lý Chi Tiêu (Expense Tracker)</p>
+        <p><strong>Phiên bản hiện tại:</strong> 2.0.0</p>
+        <p><strong>Platform:</strong> iOS & Android</p>
+        <p><strong>Ngôn ngữ:</strong> Tiếng Việt, English</p>
+        <p><strong>Đối tượng:</strong> Người dùng từ 13 tuổi trở lên</p>
+      </div>
+
+      <div class="feature-list">
+        <h3>✨ Tính năng chính</h3>
+        <ul>
+          <li>📊 Quản lý giao dịch thu/chi không giới hạn</li>
+          <li>📁 Danh mục tùy chỉnh với icon và màu sắc</li>
+          <li>💰 Thiết lập ngân sách theo ngày/tuần/tháng/năm</li>
+          <li>📈 Quản lý đầu tư (cổ phiếu, crypto, bất động sản)</li>
+          <li>📷 Quét hóa đơn bằng OCR</li>
+          <li>📤 Xuất dữ liệu CSV/JSON/PDF</li>
+          <li>☁️ Sao lưu iCloud (iOS) hoặc file JSON</li>
+          <li>🌙 Giao diện Dark/Light mode</li>
+          <li>🌐 Đa ngôn ngữ (Tiếng Việt & English)</li>
+        </ul>
       </div>
 
       <div class="faq-section" id="faq">
@@ -208,13 +245,8 @@
           <div class="faq-answer">
             <p>Bạn có thể sao lưu dữ liệu theo các cách sau:</p>
             <ul>
-              <li>
-                Vào
-                <strong
-                  >Cài đặt → Quản lý dữ liệu → Sao lưu dữ liệu (JSON)</strong
-                >
-              </li>
-              <li>Chọn vị trí lưu file và nhấn "Sao lưu"</li>
+              <li><strong>iCloud (iOS):</strong> Vào Menu > Dữ liệu & Sao lưu > Sao lưu iCloud</li>
+              <li><strong>File JSON:</strong> Vào Menu > Dữ liệu & Sao lưu > Sao lưu thủ công</li>
               <li>File sẽ được lưu với tên "backup_[ngày_tháng].json"</li>
             </ul>
           </div>
@@ -226,13 +258,29 @@
           </div>
           <div class="faq-answer">
             <p>
-              Hiện tại ứng dụng chỉ lưu trữ dữ liệu cục bộ trên thiết bị. Để
+              Hiện tại ứng dụng chủ yếu lưu trữ dữ liệu cục bộ trên thiết bị. Để
               chuyển dữ liệu sang thiết bị khác:
             </p>
             <ul>
-              <li>Sao lưu dữ liệu từ thiết bị cũ</li>
-              <li>Chuyển file sao lưu sang thiết bị mới</li>
+              <li>Sao lưu dữ liệu từ thiết bị cũ (iCloud hoặc file JSON)</li>
+              <li>Chuyển file sao lưu sang thiết bị mới (nếu dùng JSON)</li>
               <li>Khôi phục dữ liệu trên thiết bị mới</li>
+            </ul>
+            <p><em>Tính năng đồng bộ đa thiết bị sẽ ra mắt trong phiên bản Premium sắp tới!</em></p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            Làm thế nào để sử dụng tính năng OCR quét hóa đơn?
+          </div>
+          <div class="faq-answer">
+            <p>Để sử dụng OCR:</p>
+            <ul>
+              <li>Khi thêm giao dịch mới, chọn icon Camera/Ảnh</li>
+              <li>Chụp hoặc chọn ảnh hóa đơn</li>
+              <li>Ứng dụng sẽ tự động nhận dạng và điền thông tin</li>
+              <li><strong>Premium:</strong> Có thể cấu hình API key Gemini/Groq riêng trong Cài đặt</li>
             </ul>
           </div>
         </div>
@@ -246,8 +294,9 @@
             <ul>
               <li>Vào <strong>Cài đặt → Quản lý danh mục</strong></li>
               <li>Chọn "Thêm danh mục"</li>
-              <li>Nhập tên danh mục và chọn biểu tượng</li>
+              <li>Nhập tên danh mục, chọn icon và màu sắc</li>
               <li>Chọn loại (Thu nhập/Chi tiêu)</li>
+              <li>Có thể chọn danh mục cha để tạo danh mục con</li>
               <li>Nhấn "Lưu"</li>
             </ul>
           </div>
@@ -258,12 +307,28 @@
             Ứng dụng có thu thập dữ liệu cá nhân không?
           </div>
           <div class="faq-answer">
-            <p>Không, ứng dụng được thiết kế để:</p>
+            <p>Ứng dụng được thiết kế với nguyên tắc Privacy-first:</p>
             <ul>
-              <li>Lưu trữ tất cả dữ liệu trên thiết bị của bạn</li>
-              <li>Không kết nối internet để gửi dữ liệu</li>
-              <li>Không thu thập thông tin cá nhân</li>
-              <li>Bạn hoàn toàn kiểm soát dữ liệu của mình</li>
+              <li>Dữ liệu tài chính lưu trữ trực tiếp trên thiết bị của bạn</li>
+              <li>Không thu thập thông tin cá nhân (tên, email, SĐT)</li>
+              <li>Không thu thập vị trí, danh bạ hay tracking</li>
+              <li>Chỉ gửi hình ảnh hóa đơn đến API khi sử dụng tính năng OCR</li>
+              <li>Xem chi tiết tại <a href="privacy-policy.html">Chính sách bảo mật</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            Làm thế nào để nâng cấp Premium?
+          </div>
+          <div class="faq-answer">
+            <p>Để nâng cấp Premium:</p>
+            <ul>
+              <li>Vào <strong>Cài đặt → Nâng cấp Premium</strong></li>
+              <li>Chọn gói phù hợp: Monthly ($0.99), Yearly ($9.99), hoặc Lifetime ($39.99)</li>
+              <li>Thanh toán qua App Store (iOS) hoặc Google Play (Android)</li>
+              <li>Để hủy đăng ký: Vào Cài đặt thiết bị → App Store/Play Store → Subscriptions</li>
             </ul>
           </div>
         </div>
@@ -290,18 +355,27 @@
         <ol>
           <li>
             <strong>Thêm giao dịch:</strong> Nhấn nút "+" để thêm thu nhập hoặc
-            chi tiêu
+            chi tiêu. Có thể quét hóa đơn bằng OCR
           </li>
           <li>
-            <strong>Phân loại:</strong> Chọn danh mục phù hợp cho mỗi giao dịch
+            <strong>Phân loại:</strong> Chọn danh mục phù hợp cho mỗi giao dịch.
+            Tạo danh mục tùy chỉnh nếu cần
+          </li>
+          <li>
+            <strong>Thiết lập ngân sách:</strong> Vào Ngân sách để đặt giới hạn chi tiêu
+            theo ngày/tuần/tháng/năm
           </li>
           <li>
             <strong>Xem báo cáo:</strong> Kiểm tra tab "Thống kê" để xem phân
-            tích chi tiêu
+            tích chi tiêu qua biểu đồ
           </li>
           <li>
-            <strong>Sao lưu:</strong> Thường xuyên sao lưu dữ liệu để tránh mất
-            dữ liệu
+            <strong>Xuất báo cáo:</strong> Xuất dữ liệu ra CSV, JSON hoặc PDF để
+            lưu trữ hoặc chia sẻ
+          </li>
+          <li>
+            <strong>Sao lưu:</strong> Thường xuyên sao lưu dữ liệu qua iCloud hoặc
+            file JSON
           </li>
         </ol>
       </div>
@@ -311,12 +385,12 @@
         <p>Để nhận các tính năng mới và bản sửa lỗi:</p>
         <ul>
           <li>
-            <strong>iOS:</strong> Mở App Store → Tìm "Quản lý chi tiêu" → Nhấn
+            <strong>iOS:</strong> Mở App Store → Tìm "NTN Quản Lý Chi Tiêu" → Nhấn
             "Cập nhật"
           </li>
           <li>
-            <strong>Android:</strong> Mở Google Play Store → Tìm "Quản lý chi
-            tiêu" → Nhấn "Cập nhật"
+            <strong>Android:</strong> Mở Google Play Store → Tìm "NTN Quản Lý Chi
+            Tiêu" → Nhấn "Cập nhật"
           </li>
           <li>Bật tự động cập nhật để luôn có phiên bản mới nhất</li>
         </ul>
@@ -326,9 +400,10 @@
         <h2>💾 Quản lý dữ liệu</h2>
         <p>Lưu ý quan trọng về dữ liệu:</p>
         <ul>
-          <li>Dữ liệu chỉ lưu trữ trên thiết bị của bạn</li>
-          <li>Sao lưu thường xuyên để tránh mất dữ liệu</li>
-          <li>Khi gỡ ứng dụng, dữ liệu sẽ bị xóa hoàn toàn</li>
+          <li>Dữ liệu chủ yếu lưu trữ trên thiết bị của bạn</li>
+          <li>Sao lưu thường xuyên qua iCloud (iOS) hoặc file JSON</li>
+          <li>Khi gỡ ứng dụng, dữ liệu trên thiết bị sẽ bị xóa</li>
+          <li>Dữ liệu sao lưu iCloud vẫn được giữ nguyên sau khi gỡ app</li>
           <li>Không có cách khôi phục dữ liệu nếu không có file sao lưu</li>
         </ul>
       </div>
