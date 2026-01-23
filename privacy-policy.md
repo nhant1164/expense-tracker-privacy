@@ -123,21 +123,77 @@ Bạn có các quyền sau:
 | **Khôi phục dữ liệu** | Menu > Dữ liệu & Sao lưu > Khôi phục     |
 | **Hủy subscription**  | Cài đặt thiết bị > App Store/Play Store  |
 
-## 9. CHÍNH SÁCH TRẺ EM
+## 9. ĐĂNG KÝ PREMIUM (SUBSCRIPTION)
+
+### 9.1 Các gói đăng ký
+
+| Gói                        | Giá         | Thời hạn                              |
+| -------------------------- | ----------- | ------------------------------------- |
+| **Monthly (Gói Tháng)**    | $0.99/tháng | Tự động gia hạn hàng tháng            |
+| **Yearly (Gói Năm)**       | $9.99/năm   | Tự động gia hạn hàng năm              |
+| **Lifetime (Trọn đời)**    | $39.99      | Thanh toán một lần, sử dụng vĩnh viễn |
+
+### 9.2 Thanh toán
+
+- Thanh toán được xử lý hoàn toàn qua Apple App Store (iOS) hoặc Google Play Store (Android)
+- Giá được hiển thị bằng đồng tiền địa phương của bạn
+- Chúng tôi không lưu trữ thông tin thanh toán của bạn
+
+### 9.3 Tự động gia hạn
+
+- Đăng ký tự động gia hạn trừ khi bị hủy ít nhất 24 giờ trước khi kết thúc chu kỳ hiện tại
+- Tài khoản Apple ID/Google của bạn sẽ bị tính phí gia hạn trong vòng 24 giờ trước khi kết thúc chu kỳ
+- Giá gia hạn bằng với giá gói đăng ký hiện tại
+
+### 9.4 Dùng thử miễn phí (Free Trial)
+
+- Một số gói có thể bao gồm thời gian dùng thử miễn phí 7 ngày
+- Bạn có thể hủy bất cứ lúc nào trong thời gian dùng thử mà không bị tính phí
+- Nếu không hủy trước khi kết thúc thời gian dùng thử, đăng ký sẽ tự động chuyển sang gói trả phí
+- Phần chưa sử dụng của thời gian dùng thử miễn phí sẽ bị mất khi mua đăng ký
+
+### 9.5 Quản lý và hủy đăng ký
+
+**Trên iOS:**
+1. Mở **Cài đặt (Settings)** trên iPhone/iPad
+2. Nhấn vào tên của bạn (Apple ID) ở đầu màn hình
+3. Chọn **Đăng ký (Subscriptions)**
+4. Chọn "NTN Quản Lý Chi Tiêu" và nhấn **Hủy đăng ký (Cancel Subscription)**
+
+**Trên Android:**
+1. Mở **Google Play Store**
+2. Nhấn vào biểu tượng tài khoản > **Payments & subscriptions** > **Subscriptions**
+3. Chọn "NTN Quản Lý Chi Tiêu" và nhấn **Cancel subscription**
+
+> **Lưu ý:** Việc hủy sẽ có hiệu lực vào cuối chu kỳ thanh toán hiện tại. Bạn vẫn có thể sử dụng các tính năng Premium cho đến khi hết chu kỳ.
+
+### 9.6 Hoàn tiền
+
+- Yêu cầu hoàn tiền được xử lý theo chính sách của Apple/Google
+- **iOS:** Liên hệ [Apple Support](https://support.apple.com/) hoặc truy cập [reportaproblem.apple.com](https://reportaproblem.apple.com/)
+- **Android:** Liên hệ [Google Play Support](https://support.google.com/googleplay)
+
+### 9.7 Điều khoản sử dụng
+
+Việc sử dụng ứng dụng và các gói đăng ký Premium tuân theo:
+- [Điều khoản sử dụng của NTN Quản Lý Chi Tiêu](terms-of-service.html)
+- [Apple's Standard EULA (Licensed Application End User License Agreement)](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)
+
+## 10. CHÍNH SÁCH TRẺ EM
 
 Ứng dụng không dành cho trẻ em dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin từ trẻ em dưới 13 tuổi.
 
-## 10. LIÊN HỆ
+## 11. LIÊN HỆ
 
 Nếu bạn có câu hỏi về chính sách bảo mật này, vui lòng liên hệ:
 
 - **Email**: nhant.guide@gmail.com
 
-## 11. THAY ĐỔI CHÍNH SÁCH
+## 12. THAY ĐỔI CHÍNH SÁCH
 
 Chúng tôi có thể cập nhật chính sách bảo mật này theo thời gian. Mọi thay đổi quan trọng sẽ được thông báo trong ứng dụng. Bạn nên định kỳ xem lại chính sách này để cập nhật các thay đổi.
 
-## 12. CHẤP NHẬN CHÍNH SÁCH
+## 13. CHẤP NHẬN CHÍNH SÁCH
 
 Bằng cách sử dụng ứng dụng "NTN Quản Lý Chi Tiêu", bạn đồng ý với các điều khoản trong chính sách bảo mật này.
 
